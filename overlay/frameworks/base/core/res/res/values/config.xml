@@ -843,4 +843,23 @@
          Exempted from privacy indicators. -->
     <string name="config_systemTelephonyPackage" translatable="false">com.qualcomm.qti.cne</string>
 
+    <!-- Do the battery/notification LEDs support pulsing?
+         Used to decide if we show pulse settings -->
+    <bool name="config_ledCanPulse">true</bool>
+
+    <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
+    <bool name="config_cleanupUnusedFingerprints">false</bool>
+
+    <!-- Pocket Lock -->
+    <bool name="config_pocketModeSupported">true</bool>
+    <bool name="config_pocketUseLightSensor">true</bool>
+
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_supportSmartPixels">false</bool>
+
+    <!-- LiveDisplay -->
+    <bool name="config_enableLiveDisplay">false</bool>
+
+    <!-- Whether to enable Lineage Health Service -->
+    <bool name="config_lineageHealthSupported">true</bool>
 </resources>
