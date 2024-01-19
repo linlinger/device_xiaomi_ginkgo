@@ -18,6 +18,7 @@ BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 ALLOW_MISSING_DEPENDENCIES := true
 BUILD_BROKEN_CLANG_PROPERTY := true
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -175,7 +176,8 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Sepolicy
-include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+#include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
