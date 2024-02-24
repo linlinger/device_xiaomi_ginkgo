@@ -28,6 +28,15 @@ $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# AlphaDroid
+ALPHA_BUILD_TYPE := UNOFFICIAL
+ALPHA_MAINTAINER := linlinger
+WITH_GAPPS := true
+TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_64_BIT_APPS := true
+
 # Device identifier
 PRODUCT_NAME := lineage_ginkgo
 PRODUCT_DEVICE := ginkgo
